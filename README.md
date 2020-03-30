@@ -1,4 +1,6 @@
-![InputLock](inputlock-logo.png)
+[Download]: https://gitlab.com/profhound/inputlock/-/jobs/491173221/artifacts/raw/inputlock.exe
+
+[![InputLock](inputlock-logo.png)][Download]
 
 ### Introduction
 
@@ -6,7 +8,7 @@ Do you have kids or pets at home? Do you have a cat and It likes very much climb
 
 ### Usage
 
-Download InputLock.exe from https://gitlab.com/profhound/inputlock and open the application.
+#### [Download InputLock.exe (win64)][Download]
 
 InputLock support two methods of unlock. Either using [Enter] or [Esc], or entering a passphrase. The default passphrase is set to “unlock”.
 
