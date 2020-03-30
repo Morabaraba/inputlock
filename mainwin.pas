@@ -18,6 +18,7 @@ type
     FScreenFrm: TScreenForm;
     Button1: TButton;
     Image1: TImage;
+    Image2: TImage;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -27,13 +28,13 @@ type
     Memo1: TMemo;
     Panel1: TPanel;
     Panel2: TPanel;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+    procedure UnlockWithEnterOrEscClick(Sender: TObject);
+    procedure UnlockWithPassClick(Sender: TObject);
+    procedure QuitClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
-    procedure Label2Click(Sender: TObject);
-    procedure Label4Click(Sender: TObject);
+    procedure BitcoinClick(Sender: TObject);
+    procedure LitecoinClick(Sender: TObject);
+    procedure WWWClick(Sender: TObject);
   private
 
   public
@@ -49,7 +50,7 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.UnlockWithEnterOrEscClick(Sender: TObject);
 begin
   Hide;
   FScreenFrm := TScreenForm.Create(Application, True, LabeledEdit1.Text);
@@ -61,7 +62,7 @@ begin
   end;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TForm1.UnlockWithPassClick(Sender: TObject);
 begin
   Hide;
   FScreenFrm := TScreenForm.Create(Application, False, LabeledEdit1.Text);
@@ -73,7 +74,7 @@ begin
   end;
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
+procedure TForm1.QuitClick(Sender: TObject);
 begin
   Application.Terminate;
 end;
@@ -83,17 +84,17 @@ begin
   Application.MessageBox('To lock input, select passphrase or enter/esc button.', 'Hint', MB_ICONINFORMATION)
 end;
 
-procedure TForm1.Label1Click(Sender: TObject);
+procedure TForm1.BitcoinClick(Sender: TObject);
 begin
   OpenUrl('bitcoin:395AkXQv4TMW2DyLwMZqX7LDBjLWB7kCia')
 end;
 
-procedure TForm1.Label2Click(Sender: TObject);
+procedure TForm1.LitecoinClick(Sender: TObject);
 begin
   OpenUrl('litecoin:MVouZNe12WYeAv5yaLjpLf3J4muo9VwzJ6')
 end;
 
-procedure TForm1.Label4Click(Sender: TObject);
+procedure TForm1.WWWClick(Sender: TObject);
 begin
   OpenUrl('https://gitlab.com/profhound/inputlock')
 end;
