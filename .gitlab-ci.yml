@@ -4,7 +4,7 @@ stages:
 release:
   stage: compile
   script:
-    - "c:\lazarus\Lazbuild.exe" inputlock.lpi --build-mode=release
+    - c:\\lazarus\\Lazbuild.exe inputlock.lpi --build-mode=release
   artifacts:
     paths:
       - inputlock.exe
