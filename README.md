@@ -30,6 +30,6 @@ Litecoin: MVouZNe12WYeAv5yaLjpLf3J4muo9VwzJ6
 
 [NVDA Community Addons Input Lock](https://addons.nvda-project.org/addons/inputLock.en.html)
 
-### Developed Using
+### Built with
 
-![Powered by Lazarus](powered_by_graphic.jpg)
+[![Powered by Lazarus](powered_by_graphic.jpg)](https://www.lazarus-ide.org/)
